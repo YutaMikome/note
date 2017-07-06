@@ -1,7 +1,6 @@
 body {
   width: 100%;
-  height: 80%;
-  float: left;
+  height: 100%;
   .header {
     &__top-bar {
       background-color: white;
@@ -126,7 +125,7 @@ body {
     &__article-box {
       width: 40vw;
       margin-left: 430px;
-      &__article {
+      &__index_article {
         width: 575px;
         height: 190px;
         margin-top: 10px;

@@ -1,0 +1,236 @@
+body {
+  width: 100%;
+  height: 80%;
+  float: left;
+  .header {
+    &__top-bar {
+      background-color: white;
+      &__inner-top-box {
+        height: 55px;
+        width: 65vw;
+        border-bottom: solid 1px;
+        border-color: #F5F5F5;
+        margin-left: 250px;
+        &__logo {
+          height: 40px;
+          width: 90px;
+          padding-top: 16px;
+          float: left;
+        }
+        &__right-area {
+          height: 40px;
+          width: 260px;
+          padding-top: 16px;
+          float: right;
+          &__icon-box {
+            .fa-search {
+              margin-top: 5px;
+              margin-left: 20px;
+              float: left;
+            }
+            .fa-bell-o {
+              margin-top: 5px;
+              margin-left: 20px;
+              float: left;
+            }
+            &__user-icon {
+              margin-left: 30px;
+              width: 35px;
+              height: 35px;
+              background-color: #41C9B4;
+              float: left;
+            }
+          }
+          &__create-article-link {
+            height: 30px;
+            width: 108px;
+            background-color: #41C9B4;
+            border-radius: 4px;
+            float: right;
+            .fa-pencil-square-o {
+              margin-top: 7px;
+              margin-left: 9px;
+              color: white;
+              float: left;
+            }
+            &__text {
+              color: white;
+              margin-top: 1px;
+              margin-left: 4px;
+              font-size: 12px;
+              line-height: 27px;
+            }
+          }
+        }
+      }
+      &__inner-bottom-box {
+        &__category-nav {
+          margin-left: 265px;
+          .category {
+            li {
+              margin-top: 14px;
+              font-size: 13px;
+              margin-right: 30px;
+              float: left;
+            }
+          }
+        }
+        &__partition {
+          height: 35px;
+          border-right: solid 1px;
+          border-color: #F5F5F5;
+          margin-top: 6px;
+          margin-right: 20px;
+          float: left;
+
+        }
+        &__category-hashtag {
+          float:left;
+          &__box {
+            height: 30px;
+            background-color: #F7F9F9;
+            border-radius: 4px;
+            margin-left: 10px;
+            margin-top: 10px;
+            float:left;
+            &__manga {
+              width: 80px;
+              margin-top: 6px;
+              text-align: center;
+              font-size: 11px;
+            }
+            &__business {
+              width: 75px;
+              margin-top: 6px;
+              text-align: center;
+              font-size: 11px;
+            }
+            &__diary {
+              width: 45px;
+              margin-top: 6px;
+              text-align: center;
+              font-size: 11px;
+            }
+            &__cafe {
+              width: 55px;
+              margin-top: 6px;
+              text-align: center;
+              font-size: 11px;
+            }
+            &__world {
+              width: 45px;
+              margin-top: 6px;
+              text-align: center;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+    &_event-bar {
+      height: 32px;
+      background-color: #41C9B4;
+      &__message {
+        color: white;
+        font-size: 12px;
+        line-height: 33px;
+        text-align: center;
+      }
+    }
+  }
+  .main-content {
+    width: 100vw;
+    background-color: #F7F9F9;
+    padding-top: 5px;
+    &__article-box {
+      width: 40vw;
+      margin-left: 430px;
+      &__article {
+        width: 40vw;
+        height: 720px;
+        margin-top: 15px;
+        border: solid 1px;
+        border-color: #F5F5F5;
+        background-color: white;
+        &__follow-message {
+          font-size: 11px;
+          line-height: 33px;
+          text-align: left;
+          margin-top: 1px;
+          margin-left: 20px;
+          color: #898F8C;
+        }
+        &__user-data-box {
+          width: 535px;
+          height: 50px;
+          border-top: solid 1px;
+          border-color: #F5F5F5;
+          margin-top: 3px;
+          margin-left: 20px;
+          &__icon {
+            margin-top: 15px;
+            width: 35px;
+            height: 35px;
+            background-color: gray;
+            margin-right: 8px;
+            float: left;
+          }
+          &__user-name {
+            height: 27px;
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 39px;
+          }
+          &__data {
+            font-size: 11px;
+          }
+        }
+        &__image {
+          margin-top: 22px;
+        }
+        &__message-area {
+          width: 38vw;
+          &__title {
+            margin-top: 15px;
+            margin-left: 20px;
+            font-weight: 400;
+            font-size: 20px;
+          }
+          &__message-body {
+            margin-top: 15px;
+            margin-left: 20px;
+            font-size: 15px;
+          }
+          &__more-message {
+            margin-top: 15px;
+            margin-left: 20px;
+            font-size: 12px;
+            color: #41C9B4;
+          }
+          &__hashtag-area {
+            &__hashtag{
+              font-size: 12px;
+              color: #41C9B4;
+              margin-top: 15px;
+              margin-left: 20px;
+              float: left;
+              margin-bottom: 10px;
+            }
+          }
+        }
+        &__action-area {
+          clear:both;
+          width: 535px;
+          border-top: solid 1px;
+          margin-left: 20px;
+          color: #F5F5F5;
+        }
+      }
+    }
+  }
+  .footer {
+    height: 200px;
+    background-color: #F7F9F9;
+  }
+}

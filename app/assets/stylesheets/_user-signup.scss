@@ -1,0 +1,146 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F7F9F9;
+  .header {
+    &__logo {
+      font-size: 30px;
+      font-weight: bolder;
+      padding-top: 40px;
+      margin-left: 680px;
+      letter-spacing: 0.1em;
+    }
+  }
+  .signup-main-content {
+    margin-top: 24px;
+    margin-left: 538px;
+    width: 360px;
+    height: 520px;
+    background-color: white;
+    border: solid 1px;
+    border-color: #F5F5F5;
+    &__signup-text {
+      font-size: 22px;
+      font-weight: bolder;
+      margin-left: 100px;
+      margin-top: 42px;
+      margin-bottom: 30px;
+    }
+    .field {
+      margin-bottom: 10px;
+      input {
+        font-size: 12px;
+        height: 20px;
+        width: 300px;
+        border: 1px solid #d9e0e2;
+        border-radius: 2px;
+        padding: 5px 10px;
+        margin-left: 20px;
+      }
+    }
+    .checkbox-area {
+      &__checkbox{
+        margin-top: 10px;
+        margin-left: 120px;
+        float: left;
+        &__checkbox-message {
+          font-size: 11px;
+          color: #B3B1A9;
+          margin-top: 10px;
+          margin-left: 5px;
+          float: left;
+        }
+      }
+    }
+    .actions{
+      input {
+        width: 320px;
+        height: 50px;
+        font-size: 16px;
+        border: 1px solid #41C9B4;
+        background-color: #41C9B4;
+        color: white;
+        font-weight: bolder;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+    }
+    &__partition-top {
+      width: 320px;
+      border-top: solid 1px;
+      border-color: #E1E5E7;
+      margin-top: 20px;
+      margin-left:20px;
+    }
+    &__message {
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-left: 90px;
+    }
+    &__twitter-link {
+      width: 155px;
+      height: 45px;
+      background-color: #00ACEE;
+      border-radius: 4px;
+      margin-top: 10px;
+      margin-left: 20px;
+      font-size: 13px;
+      float: left;
+      &__text {
+        color:white;
+        text-align: center;
+        line-height: 45px;
+      }
+    }
+    &__facebook-link {
+      width: 155px;
+      height: 45px;
+      background-color: #3B5998;
+      border-radius: 4px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      font-size: 13px;
+      float: left;
+      &__text {
+        color:white;
+        text-align: center;
+        line-height: 45px;
+      }
+    }
+    &__partition-bottom {
+      clear: both;
+      width: 320px;
+      border-top: solid 1px;
+      border-color: #E1E5E7;
+      margin-left:25px;
+    }
+    &__login-link {
+      font-size: 11px;
+      color: #41C9B4;
+      margin-top: 15px;
+      margin-left: 160px;
+    }
+    &__cakes-message {
+      font-size: 12px;
+      margin-top: 15px;
+      margin-left: 80px;
+    }
+  }
+
+  .footer-nav {
+    margin-top: 30px;
+    margin-left: 360px;
+    float: left;
+    li {
+      font-size: 11px;
+      color: #B3B1A9;
+      margin-left: 15px;
+      float: left;
+
+    }
+  }
+}
