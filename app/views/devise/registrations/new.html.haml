@@ -1,0 +1,72 @@
+!!!
+%html{lang: "ja"}
+  %head
+    %meta{charset: "utf-8"}
+  %body
+    .header
+      .header__logo
+        note
+    .signup-main-content
+      .signup-main-content__signup-text
+        noteに登録する
+      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        = devise_error_messages!
+        .field
+          = f.email_field :email, autofocus: true, placeholder: 'メールアドレス'
+        .field
+          = f.password_field :password, autocomplete: "off", placeholder: "パスワード"
+        - if devise_mapping.rememberable?
+          .field.clearfix
+        .checkbox-area
+          %input.checkbox-area__checkbox{:name => "kiyaku", :type => "checkbox", :value => "1"}
+            .checkbox-area__checkbox__checkbox-message
+              利用規約に同意する
+        .actions
+          = f.submit "登録する（無料）", class: 'btn'
+      .signup-main-content__partition-top
+      .signup-main-content__message
+        ソーシャルアカウントで登録
+      .signup-main-content__twitter-link
+        .signup-main-content__twitter-link__text
+          Twitter
+      .signup-main-content__facebook-link
+        .signup-main-content__facebook-link__text
+          Facebook
+      .signup-main-content__partition-bottom
+      .signup-main-content__login-link
+        ログイン
+      .signup-main-content__cakes-message
+        cakesアカウントをお持ちの方はこちら
+    %ul.footer-nav
+      %li noteプレミアム
+      %li クリエイターの方へ
+      %li よくある質問
+      %li 使い方
+      %li プライバシー
+      %li ご利用規約
+      %li 運営会社
+      %li 採用情報
+      %li 運営へのお問合せ
+
+/ 新規登録！
+/ %h2 Sign up
+/ = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+/   = devise_error_messages!
+/   .field
+/     = f.label :email
+/     %br/
+/     = f.email_field :email, autofocus: true
+/   .field
+/     = f.label :password
+/     - if @minimum_password_length
+/       %em
+/         (#{@minimum_password_length} characters minimum)
+/     %br/
+/     = f.password_field :password, autocomplete: "off"
+/   .field
+/     = f.label :password_confirmation
+/     %br/
+/     = f.password_field :password_confirmation, autocomplete: "off"
+/   .actions
+/     = f.submit "Sign up"
+/ = render "devise/shared/links"

@@ -1,0 +1,47 @@
+!!!
+%html{lang: "ja"}
+  %head
+    %meta{charset: "utf-8"}
+  %body
+    .header
+      .header__logo
+        note
+    .login-main-content
+      .login-main-content__login-text
+        ログイン
+      .login-main-content__login-message
+        cakesのアカウントをお持ちの方は
+      .login-main-content__login-message
+        このページからログインできます。
+      .login-main-content__facebook-link
+        .login-main-content__facebook-link__text
+          Facebookでログイン
+      .login-main-content__twitter-link
+        .login-main-content__twitter-link__text
+          Twitterでログイン
+      .login-main-content__mail-login-text
+        メールアドレスでログイン
+
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .field
+          = f.email_field :email, autofocus: true, placeholder: 'メールアドレス or note ID'
+        .field
+          = f.password_field :password, autocomplete: "off", placeholder: "パスワード"
+        - if devise_mapping.rememberable?
+          .field.clearfix
+        .password-message
+          パスワードを忘れた方
+        .actions
+          = f.submit "ログイン"
+        .signup-link
+          会員登録はこちら
+    %ul.footer-nav
+      %li noteプレミアム
+      %li クリエイターの方へ
+      %li よくある質問
+      %li 使い方
+      %li プライバシー
+      %li ご利用規約
+      %li 運営会社
+      %li 採用情報
+      %li 運営へのお問合せ
