@@ -12,7 +12,7 @@
             .header__top-bar__inner-top-box__right-area__icon-box
               %i.fa.fa-search
               %i.fa.fa-bell-o
-              .header__top-bar__inner-top-box__right-area__icon-box__user-icon
+              = link_to "", destroy_user_session_path, method: :delete, class: 'header__top-bar__inner-top-box__right-area__icon-box__user-icon'
             .header__top-bar__inner-top-box__right-area__create-article-link
               %i.fa.fa-pencil-square-o
               .header__top-bar__inner-top-box__right-area__create-article-link__text
